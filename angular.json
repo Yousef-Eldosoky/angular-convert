@@ -27,9 +27,12 @@
               }
             ],
             "styles": [
+              "public/css/styles.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
