@@ -1,27 +1,51 @@
-# ConvertToAngular
+# Website Conversion to Angular Framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This repository contains a project where a regular static/dynamic website has been converted to leverage the **Angular framework**, enabling better scalability, performance, and maintainability.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Component-Based Architecture**: The website is refactored into reusable and modular Angular components.
+- **Routing**: Angular Router is implemented for seamless navigation between pages.
+- **Two-Way Data Binding**: Dynamic interaction between the UI and backend logic.
+- **Service Integration**: Leveraged Angular Services for API communication and state management.
+- **Responsive Design**: Ensures the site is optimized for both desktop and mobile devices.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework for building modern web applications.
+- **TypeScript**: Type-safe programming for robust code.
+- **CSS**: For enhanced styling capabilities.
 
-## Build
+## How to Run the Project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Yousef-Eldosoky/angular-convert.git
+   cd angular-convert
+   ```
 
-## Running unit tests
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Run the development server:
+   ```bash
+   ng serve
+   ```
 
-## Running end-to-end tests
+4. Open the application in your browser:
+   ```
+   http://localhost:4200
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Future Improvements
 
-## Further help
+- Add unit tests with **Karma** and **Jasmine**.
+- Optimize for progressive web app (PWA) support.
+- Integrate lazy loading for better performance.
+- Integrate with real backend.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). Contributions are welcome!
