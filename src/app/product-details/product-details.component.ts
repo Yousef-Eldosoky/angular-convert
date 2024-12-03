@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ItemsComponent, Product } from '../shop/items/items.component';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ShopService } from '../shop.service';
+import { IProduct } from '../interface/i-product';
 
 @Component({
   selector: 'app-product-details',
@@ -10,13 +11,12 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent {
-  product: Product;
+  product?: IProduct;
   productId: number;
-  private item: ItemsComponent = new ItemsComponent();
 
-  constructor(private activatedRoute: ActivatedRoute, private router:Router) {
+  constructor(private activatedRoute: ActivatedRoute, private router:Router, private shopService: ShopService) {
     this.productId = +(this.activatedRoute.snapshot.paramMap.get('Id') ?? 0);
-    this.product = this.item.products[this.productId-1];
+    this.product = this.shopService.getProduct(this.productId);
     if (this.product == null) {
       this.router.navigate(['/notFound']);
     }

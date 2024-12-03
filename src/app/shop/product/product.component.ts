@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { IProduct } from '../../interface/i-product';
 
 @Component({
   selector: 'app-product',
@@ -9,10 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  @Input() Id?: number;
-  @Input() name?: string;
-  @Input() sale: boolean = false;
-  @Input() stars: number = 0;
-  @Input() price?: number;
-  @Input() priceBeforeSale: number = this.price ?? 0;
+  @Input() product?: IProduct;
 }
