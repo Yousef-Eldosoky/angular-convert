@@ -14,7 +14,7 @@ export class ShopService {
     "category": "men's clothing",
     "image": "https://picsum.photos/200/300?random=20",
     "rating": {
-    "rate": 4,
+    "rate": 3.9,
     "count": 120
     }
     },
@@ -26,7 +26,7 @@ export class ShopService {
     "category": "men's clothing",
     "image": "https://picsum.photos/200/300?random=19",
     "rating": {
-    "rate": 4,
+    "rate": 4.1,
     "count": 259
     }
     },
@@ -38,7 +38,7 @@ export class ShopService {
     "category": "men's clothing",
     "image": "https://picsum.photos/200/300?random=18",
     "rating": {
-    "rate": 5,
+    "rate": 4.7,
     "count": 500
     }
     },
@@ -50,7 +50,7 @@ export class ShopService {
     "category": "men's clothing",
     "image": "https://picsum.photos/200/300?random=17",
     "rating": {
-    "rate": 2,
+    "rate": 2.1,
     "count": 430
     }
     },
@@ -62,7 +62,7 @@ export class ShopService {
     "category": "jewelery",
     "image": "https://picsum.photos/200/300?random=16",
     "rating": {
-    "rate": 5,
+    "rate": 4.6,
     "count": 400
     }
     },
@@ -74,7 +74,7 @@ export class ShopService {
     "category": "jewelery",
     "image": "https://picsum.photos/200/300?random=15",
     "rating": {
-    "rate": 4,
+    "rate": 3.9,
     "count": 70
     }
     },
@@ -98,7 +98,7 @@ export class ShopService {
     "category": "jewelery",
     "image": "https://picsum.photos/200/300?random=13",
     "rating": {
-    "rate": 2,
+    "rate": 1.9,
     "count": 100
     }
     },
@@ -110,7 +110,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=12",
     "rating": {
-    "rate": 3,
+    "rate": 3.3,
     "count": 203
     }
     },
@@ -122,7 +122,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=11",
     "rating": {
-    "rate": 3,
+    "rate": 2.9,
     "count": 470
     }
     },
@@ -134,7 +134,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=10",
     "rating": {
-    "rate": 5,
+    "rate": 4.8,
     "count": 319
     }
     },
@@ -146,7 +146,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=9",
     "rating": {
-    "rate": 5,
+    "rate": 4.8,
     "count": 400
     }
     },
@@ -158,7 +158,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=8",
     "rating": {
-    "rate": 3,
+    "rate": 2.9,
     "count": 250
     }
     },
@@ -170,7 +170,7 @@ export class ShopService {
     "category": "electronics",
     "image": "https://picsum.photos/200/300?random=7",
     "rating": {
-    "rate": 2,
+    "rate": 2.2,
     "count": 140
     }
     },
@@ -182,7 +182,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=6",
     "rating": {
-    "rate": 3,
+    "rate": 2.6,
     "count": 235
     }
     },
@@ -194,7 +194,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=5",
     "rating": {
-    "rate": 3,
+    "rate": 2.9,
     "count": 340
     }
     },
@@ -206,7 +206,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=4",
     "rating": {
-    "rate": 4,
+    "rate": 3.8,
     "count": 679
     }
     },
@@ -218,7 +218,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=3",
     "rating": {
-    "rate": 5,
+    "rate": 4.7,
     "count": 130
     }
     },
@@ -230,7 +230,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=2",
     "rating": {
-    "rate": 5,
+    "rate": 4.5,
     "count": 146
     }
     },
@@ -242,7 +242,7 @@ export class ShopService {
     "category": "women's clothing",
     "image": "https://picsum.photos/200/300?random=1",
     "rating": {
-    "rate": 4,
+    "rate": 3.6,
     "count": 145
     }
     }

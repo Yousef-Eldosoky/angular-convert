@@ -11,4 +11,8 @@ import { IProduct } from '../../interface/i-product';
 })
 export class ProductComponent {
   @Input() product?: IProduct;
+
+  round(num: number) : number {
+    return Math.round(num);
+  }
 }

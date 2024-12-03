@@ -12,10 +12,10 @@
                 <!-- Product reviews-->
                 <div class="d-flex justify-content-center small text-warning mb-2">
                     @if(product) {
-                        @for(i of [].constructor(product.rating.rate); track i) {
+                        @for(i of [].constructor(round(product.rating.rate)); track i) {
                             <div class="bi-star-fill"></div>
                         }
-                        @for(i of [].constructor(5 - product.rating.rate); track i) {
+                        @for(i of [].constructor(5 - round(product.rating.rate)); track i) {
                             <div class="bi-star"></div>
                         }
                     }
