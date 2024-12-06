@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from './interface/i-product';
 import { Subject } from 'rxjs';
+import { ICartProduct } from './interface/i-cart-product';
 
 @Injectable({
   providedIn: 'root'
@@ -251,10 +252,22 @@ export class ShopService {
   getAllProducts() : IProduct[] { return this.products}
   getProduct(id: number) : IProduct | undefined {return this.products.find((p) => p.id == id)}
 
-  cartSubject = new Subject<IProduct[]>();
-  private cart: IProduct[] = [];
+  cartSubject = new Subject<ICartProduct[]>();
+  private cart: ICartProduct[] = [];
   addToCart(product: IProduct) {
-    this.cart.push(product);
+    const prductIndex = this.cart.findIndex((p) => p.product.id == product.id);
+    
+    if(prductIndex == -1) {
+      const cartProduct: ICartProduct =  {product: product, count: 1};
+      this.cart.push(cartProduct);
+      this.cartSubject.next(this.cart);
+    } else {
+      this.cart[prductIndex].count++;
+    }
+  }
+
+  removeFromCart(id: number) {
+    this.cart = this.cart.filter(p => p.product.id != id);
     this.cartSubject.next(this.cart);
   }
 

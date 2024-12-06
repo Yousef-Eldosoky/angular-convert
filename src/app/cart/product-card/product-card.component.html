@@ -1,9 +1,10 @@
 <div class="card">
-    <h5 class="card-header"> {{product?.title}} </h5>
+    <h5 class="card-header"> {{cartProduct?.product?.title}} </h5>
     <div class="card-body">
-        <h5 class="card-title"> {{product?.category}} </h5>
-        <p class="card-text"> {{product?.description! | sliceText : 80}} </p>
-        <p class="card-text"> {{product?.price | currency}} </p>
-        <button class="btn btn-danger">Remove from cart</button>
+        <h5 class="card-title"> {{cartProduct?.product?.category}} </h5>
+        <p class="card-text"> {{cartProduct?.product?.description! | sliceText : 80}} </p>
+        <p class="card-text"> {{cartProduct?.product?.price | currency}} </p>
+        <p class="card-text"> Quantity: {{cartProduct?.count}} </p>
+        <button class="btn btn-danger" (click)="removeFromCart(cartProduct?.product?.id)">Remove from cart</button>
     </div>
 </div>

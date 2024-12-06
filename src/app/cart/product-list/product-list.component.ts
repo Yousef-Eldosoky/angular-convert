@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ShopService } from '../../shop.service';
-import { IProduct } from '../../interface/i-product';
 import { ProductCardComponent } from "../product-card/product-card.component";
+import { ICartProduct } from '../../interface/i-cart-product';
 
 @Component({
   selector: 'app-product-list',
@@ -11,8 +11,14 @@ import { ProductCardComponent } from "../product-card/product-card.component";
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  cart: IProduct[];
+  cart: ICartProduct[];
   constructor(private shopService: ShopService) {
     this.cart = this.shopService.getCart();
+  }
+
+  ngOnInit() {
+    this.shopService.cartSubject.subscribe((value) => {
+      this.cart = value;
+    });
   }
 }
