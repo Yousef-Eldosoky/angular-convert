@@ -1,0 +1,9 @@
+<div class="card">
+    <h5 class="card-header"> {{product?.title}} </h5>
+    <div class="card-body">
+        <h5 class="card-title"> {{product?.category}} </h5>
+        <p class="card-text"> {{product?.description! | sliceText : 80}} </p>
+        <p class="card-text"> {{product?.price | currency}} </p>
+        <button class="btn btn-danger">Remove from cart</button>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from './interface/i-product';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -249,5 +250,21 @@ export class ShopService {
     ]
   getAllProducts() : IProduct[] { return this.products}
   getProduct(id: number) : IProduct | undefined {return this.products.find((p) => p.id == id)}
+
+  cartSubject = new Subject<IProduct[]>();
+  private cart: IProduct[] = [];
+  addToCart(product: IProduct) {
+    this.cart.push(product);
+    this.cartSubject.next(this.cart);
+  }
+
+  getCart() {
+    return this.cart;
+  }
+
+  cartCount(): number {
+    return this.cart.length;
+  }
+
   constructor() { }
 }
